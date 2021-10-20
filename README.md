@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+TELEFONO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+COMPONENTES:
 
-## Available Scripts
+    INFO:
+    - RENDERIZA mensaje al RECIBIR la condicion.
 
-In the project directory, you can run:
+    DISPLAY:
+    - RECIBE y RENDERIZAR los numeros RECIBIDOS.
 
-### `npm start`
+    ACTIONS:
+    RENDERIZA los botones.
+    Pasa el texto a los botones de action.
+    Pasar una clase a los action.
+    Le passa una función
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+        ACTION:
+        - RENDERIZAR texto RECIBIdo.
+        - RECIBE una classe.
+        - RECIBE una funcion.
+        - RECIBE un estado.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    KEYBOARD:
+    - Pasa texto a Key.
+    - Muestra un array de keys.
+    - Pasa funcion a key según condicion.
+    - RECIBE un estado para activar o desactivar botones.
 
-### `npm run build`
+        kEY:
+        - RENDERIZAR los numeros RECIBIdos.
+        - RECIBE una funcion que se ejecuta al hacer onClick.
+        - RECIBIR un estado de activo y desactivo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    APP:
+    - Array vacia a la que le passas los valores de los botones seleccionados, con la condicion que acceptar un máximo 9 numeros.
+    - Pasar esta array al display.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - 9 Numeros:
+        - Se activa boton llamada.
 
-### `npm run eject`
+    - Función LLamar:
+        - Bloquear teclado
+        - Aparece Info
+        - Se activa boton colgar
+        - Se desactiva boton llamar
+        - Activar cuenta atrás llamada 5 segundos.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - Función colgar:
+        - Desbloquear teclado.
+        - Apagar Info
+        - Se desactiva el boton colgar
+        - Se activa el boton llamar
+        - Borra array de numeros display.
