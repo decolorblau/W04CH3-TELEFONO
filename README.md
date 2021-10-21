@@ -38,7 +38,7 @@ COMPONENTES:
 
     APP:
     - Array vacia a la que le passas los valores de los botones seleccionados, con la condicion que acceptar un máximo 9 numeros.
-    - Pasar esta array al display.
+    (ok) - Pasar esta array al display.
 
     - 9 Numeros:
         - Se activa boton llamada.
