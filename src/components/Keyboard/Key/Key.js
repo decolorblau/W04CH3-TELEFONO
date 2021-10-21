@@ -1,16 +1,18 @@
 import PropTypes from "prop-types";
 
-const Key = ({ number, actionOnClick }) => {
+const Key = ({ textButton, actionOnClick, className, disabled }) => {
   return (
-    <button className="key" onClick={actionOnClick}>
-      {number}
-    </button>
+    <li>
+      <button className={className} onClick={actionOnClick} disabled={disabled}>
+        {textButton}
+      </button>
+    </li>
   );
 };
 
-export default Key;
-
 Key.propTypes = {
-  number: PropTypes.number.isRequired,
+  textButton: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
+
+export default Key;
