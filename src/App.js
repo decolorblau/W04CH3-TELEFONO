@@ -1,8 +1,12 @@
 import "./App.css";
+import Display from "./components/Display/Display";
+import Info from "./components/Info/Info";
 
 function App() {
   return (
     <>
+      <Info state={true} />
+      <Display number={456} />
       {/*       <span className="message">Calling...</span>
       <main className="phone">
         <div className="keyboard-container">
