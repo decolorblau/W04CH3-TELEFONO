@@ -1,6 +1,7 @@
 import Key from "./Key/Key";
+import PropTypes from "prop-types";
 
-const Keyboard = () => {
+const Keyboard = (isCalling) => {
   const keyboardNumbers = [
     "9",
     "8",
@@ -22,10 +23,15 @@ const Keyboard = () => {
           textButton={number}
           className={`key${number === "Delete" ? " big" : ""}`}
           actionOnClick={() => {}}
-          disabled="false"
+          isCalling={isCalling}
         />
       ))}
     </ol>
   );
 };
+
+Keyboard.propTypes = {
+  isCalling: PropTypes.bool.isRequired,
+};
+
 export default Keyboard;
