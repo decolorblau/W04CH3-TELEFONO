@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-const Action = ({ textAction, actionOnClick, className, disabled }) => {
+const Action = ({ href, textAction, actionOnClick, className, disabled }) => {
   return (
     <a
-      href="ActionButton"
+      href={href}
       className={className}
       onClick={actionOnClick}
       disabled={disabled}
@@ -14,8 +14,9 @@ const Action = ({ textAction, actionOnClick, className, disabled }) => {
 };
 
 Action.propTypes = {
-  textButton: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  href: PropTypes.string.isRequired,
+  textAction: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
   disabled: PropTypes.bool.isRequired,
 };
 
