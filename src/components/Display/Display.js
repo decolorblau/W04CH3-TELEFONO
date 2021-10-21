@@ -9,6 +9,6 @@ const Display = ({ number }) => {
 };
 
 Display.propTypes = {
-  number: PropTypes.number,
+  number: PropTypes.string.isRequired,
 };
 export default Display;
