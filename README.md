@@ -25,13 +25,13 @@ COMPONENTES:
 
 
     KEYBOARD:
-    - Pasa texto a Key.
-    - Muestra un array de keys.
-    - Pasa funcion a key según condicion.
-    - RECIBE un estado para activar o desactivar botones.
+    (ok) - Pasa texto a Key.
+    (ok) - Muestra un array de keys.
+    (ok) - Pasa funcion a key según condicion.
+    (ok) - RECIBE un estado para activar o desactivar botones.
 
-        kEY:
-        - RENDERIZAR los numeros RECIBIdos.
+        KEY:
+        - RENDERIZAR los numeros RECIBIDOS.
         - RECIBE una funcion que se ejecuta al hacer onClick.
         - RECIBIR un estado de activo y desactivo
 

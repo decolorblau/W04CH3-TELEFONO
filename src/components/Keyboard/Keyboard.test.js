@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import Key from "./Key";
+import Keyboard from "./Keyboard";
 
-describe("Given a Key component", () => {
+describe("Given a Keyboard component", () => {
   describe("When it receives 7", () => {
     test("Then it should return 7", () => {
       const key = {
@@ -13,14 +13,7 @@ describe("Given a Key component", () => {
 
       const expectedNumber = 7;
 
-      render(
-        <Key
-          textButton={key.textButton}
-          className={key.className}
-          disabled={key.disabled}
-          actionOnClick={key.actionOnClick}
-        />
-      );
+      render(<Keyboard />);
 
       const numberInput = screen.getByText(expectedNumber);
 
