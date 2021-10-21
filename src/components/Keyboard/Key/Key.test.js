@@ -1,14 +1,14 @@
 import { render, screen } from "@testing-library/react";
-import Display from "./Display";
+import Key from "./Key";
 
 describe("Given a Display component", () => {
-  describe("When it receives 6546", () => {
-    test("Then it should return 6546", () => {
-      const number = 6546;
+  describe("When it receives 7", () => {
+    test("Then it should return 7", () => {
+      const number = 7;
 
-      const expectedNumber = 6546;
+      const expectedNumber = 7;
 
-      render(<Display number={number} />);
+      render(<Key number={number} actionOnClick={() => {}} />);
 
       const numberInput = screen.getByText(expectedNumber);
 

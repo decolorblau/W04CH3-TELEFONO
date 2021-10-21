@@ -1,9 +1,21 @@
 import "./App.css";
+import Display from "./components/Display/Display";
+import Info from "./components/Info/Info";
+import Keyboard from "./components/Keyboard/Keyboard";
 
 function App() {
   return (
     <>
-      {/*       <span className="message">Calling...</span>
+      <Info state={true} />
+      <main className="phone">
+        <div className="keyboard-container">
+          <Keyboard />
+        </div>
+        <div className="actions">
+          <Display number={456} />
+        </div>
+      </main>
+      {/*         <span className="message">Calling...</span>
       <main className="phone">
         <div className="keyboard-container">
           <ol className="keyboard">
@@ -51,7 +63,7 @@ function App() {
             Hang
           </a>
         </div>
-      </main> */}
+      </main>  */}
     </>
   );
 }

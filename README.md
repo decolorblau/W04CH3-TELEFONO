@@ -3,10 +3,12 @@ TELEFONO
 COMPONENTES:
 
     INFO:
-    - RENDERIZA mensaje al RECIBIR la condicion.
+
+(ok) - RENDERIZA mensaje al RECIBIR la condicion.
 
     DISPLAY:
-    - RECIBE y RENDERIZAR los numeros RECIBIDOS.
+
+(ok) - RECIBE y RENDERIZAR los numeros RECIBIDOS.
 
     ACTIONS:
     RENDERIZA los botones.
